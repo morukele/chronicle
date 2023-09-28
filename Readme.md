@@ -23,4 +23,5 @@ to enter this directory, cd into `web`, then cd into `client`
 
 - download [nvm]() and change your node version to version 16.0.0
 - run `npm install`
+- run `export NODE_OPTIONS=--openssl-legacy-provider`
 - run `npm start`

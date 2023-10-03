@@ -31,7 +31,7 @@ class Configuration:
 
         _ = self.connection_params()
         # create a temporary psuedo connection to some non-existent descriptor so the api endpoint can reference something for self.obd_io
-        self.obd_io = obd.Async("/dev/pts/2")
+        self.obd_io = obd.Async("/dev/ttys018")
         self.sio = socketio.AsyncServer(cors_allowed_origins='*', json=obdio, async_mode='asgi')
 
         # register python-obd logger with onboardpi
